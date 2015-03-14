@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <script src="//code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="./js/utilities.js"></script>
+    <script src="./js/probabilities.js"></script>
+    <script src="./js/items.js"></script>
+    <script src="./js/quality.js"></script>
+    <script src="./js/scripts.js"></script>
+    <script type="text/javascript">
+        window.onload = loadLists;
+    </script>
+
+    <title>Treasure Chest</title>
+</head>
+
+
+<body>
+    <h1>Roll</h1>
+    <div class="btn-group" role="group" aria-label="...">
+        <button onclick="generate(amount.value)">Generate</button>
+        <input type="number" id="amount" value="10">
+        <input type="radio" name="amountType" value=1 checked>items
+        <input type="radio" name="amountType" value=2>$
+    </div>
+    <h2>Chest</h2>
+    <div id="chestPanel">
+        <ul id="chest"></ul>
+        <button class="clearButton">Clear</button>
+    </div>
+    <h2>Backpack</h2>
+    <div id="backpackPanel">
+        <ul id="backpack"></ul>
+        <button class="clearButton">Clear</button>
+    </div>
+</body>
+</html> 
